@@ -1,11 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nguyễn Quang Huy</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nguyễn Quang Huy</title>
+  <link rel="stylesheet" type="text/css" href="main.css"/>
+  <link rel="stylesheet" type="text/css" href="reset.css"/>
+  <script src="all.js"></script>
 </head>
+
 <body>
-    <div class="header">My Profile</div>
+  <div class="container">
+    <div class="header">
+      <div class="header__logo">
+        <a href="index.html" class="header__logo__j">
+          <img src="images/cat_logo_03-remove.png" alt=""/>
+          <p class="p">Huy Nguyễn</p> 
+        </a>
+      </div>
+
+      <div class="search-full">
+        <button class="searchlogo">
+          <i class="fas fa-search"></i>
+        </button>
+        <form class="search">
+          <input type="search" id="search" placeholder="Search..." /> 
+        </form>
+      </div>
+      
+      <nav class="menu">
+        <button class="nho">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="#" class="menu__link">Find People</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Messages</a>
+            <i class="fas fa-envelope"></i>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">My Contacts</a>
+          </li>
+        </ul>
+        <a href="index.html" class="ava-little">
+          <img class="cap3" src="./images/avatar.jpg"/>
+          <span class="xanh"></span>
+          </a>
+      </nav>
+    </div>
+
+    <div class="main">
+      <div class="box-left">
+        <div class="avartar">
+          <img src="./images/avatar.jpg" class="my-ava"/>
+        </div>
+
+        <div class="full-infor-left">
+          <div class="infor-left">
+            <h2>WORK________________________________________________</h2>
+            <div class="work">
+              <h3>Information Technology</h3>
+              <div>Primary</div>
+              <p>Km10, Trần Phú, Hà Đông, Hà Nội</p>
+            </div>
+            <div class="work">
+              <h3>Font-end</h3>
+              <div>Secondary</div>
+              <p>Số 21 Lê Đức Thọ, P.Mỹ Đình 2, Q.Nam Từ Liêm, TP Hà Nội</p>
+            </div>
+          </div>
+
+          <div class="infor-left">
+            <h2>SKILLS_______________________________________________</h2>
+            <div class="skills">
+              <h3>HTML</h3>
+              <h3>CSS</h3>
+              <h3>JAVASCRIP</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="box-right">
+        <div class="infor1">
+          <div class="infor1-simple">
+            <div class="div-lit">
+              <h5 class="name">Nguyễn Quang Huy</h5>
+              <div class="div-little">
+                <i class="fas fa-map-marker-alt"></i>
+                <p class="address">Số 82, Trần Phú, Hà Đông, Hà Nội</p>
+              </div>
+            </div>
+
+            <div class="bookmark">
+              <i class="fas fa-bookmark"></i>
+              <p>Bookmarks</p>
+            </div>
+          </div>
+
+            <p class="job">Coder</p>
+            <div class="rank">
+              <h5>RANKINGS</h5>
+              <div class="start">
+                <p>6.2</p>
+                <div class="start-in">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star cui"></i>
+                  <i class="fas fa-star cui"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="infor2">
+            <div class="infor2-1 ass">
+              <i class="fas fa-comment-alt"></i>
+              <p>Send message</p>
+            </div>
+            <div class="infor2-2 ass">
+              <i class="fas fa-check"></i>
+              <p>Contacts</p>
+            </div>
+            <p class="infor2-little ass">Report user</p>
+          </div>
+
+            <div class="tab">
+              <button class="tablinks" onclick="opencontent(event, 'Timeline')">
+                <i class="far fa-eye"></i>
+                Timeline
+              </button>
+              <button class="tablinks" onclick="opencontent(event, 'About')">
+                <i class="fas fa-user"></i>
+                About
+              </button>
+            </div>
+
+            <div id="Timeline" class="tabcontent">
+              <div class="thin">
+                <p class="ti">MY LIFE STYLE</p>
+                <p class="ngo">Never be bullied into silence. Never allow yourself to be made a victim. Accept no one’s definition of your life; define yourself. —Harvey Fierstein</p>
+              </div>
+            </div>
+
+            <div id="About" class="tabcontent">
+              <div class="thin">
+                <h3 class="ti">CONTACT INFORMATION</h3>
+                <div class="suu">
+                  <p class="dan">Phone:</p>
+                  <p class="mao">0397088372</p>
+                </div>
+                <div class="suu">
+                  <p class="dan">Address:</p>
+                  <p class="ti"> No. 82, Tran Phu Street, Ha Dong District, Hanoi City</p>
+                </div>
+                <div class="suu">
+                  <p class="dan">E-mail:</p>
+                  <p class="mao">huyro1212000@gmail.com</p>
+                </div>
+              </div>
+              
+              <div class="thin">
+                <h3 class="ti">BASIC INFORMATION</h3>
+                <div class="suu">
+                  <p class="dan">Birthday:</p>
+                  <p>January 12, 2000</p>
+                </div>
+                <div class="suu">
+                  <p class="dan">Gender:</p>
+                  <p>Male</p>
+                </div>
+              </div>
+            </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function opencontent(evt, contentName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(contentName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    </script>
 </body>
+
 </html>
